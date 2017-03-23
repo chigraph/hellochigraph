@@ -1,7 +1,8 @@
 {
   "dependencies": [
     "lang",
-    "c"
+    "c",
+    "github.com/chigraph/std/io"
   ],
   "graphs": [
     {
