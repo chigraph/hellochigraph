@@ -1,15 +1,14 @@
 {
   "dependencies": [
-    "lang",
-    "c",
-    "github.com/chigraph/std/io"
+    "github.com/chigraph/std/io",
+    "lang"
   ],
   "graphs": [
     {
       "connections": [
         {
           "input": [
-            "5be41e2e-038a-4fe9-bb0e-5287c73458bf",
+            "0d362eed-8073-4331-84a9-af4db5323a65",
             0
           ],
           "output": [
@@ -20,18 +19,44 @@
         },
         {
           "input": [
+            "7e48e374-1171-4757-b5c9-e356e6f55181",
+            0
+          ],
+          "output": [
+            "0d362eed-8073-4331-84a9-af4db5323a65",
+            0
+          ],
+          "type": "data"
+        },
+        {
+          "input": [
+            "3b071d38-ce24-4473-a7cd-4f276a0fb849",
+            0
+          ],
+          "output": [
+            "3cfcddc3-29ef-45df-bd66-47591ae4cadd",
+            0
+          ],
+          "type": "data"
+        },
+        {
+          "input": [
             "bea549a7-0768-43e9-9fc9-dafa8386721c",
             0
           ],
           "output": [
-            "5be41e2e-038a-4fe9-bb0e-5287c73458bf",
+            "0d362eed-8073-4331-84a9-af4db5323a65",
             0
           ],
           "type": "exec"
         }
       ],
       "data_inputs": [],
-      "data_outputs": [],
+      "data_outputs": [
+        {
+          "": "lang:i32"
+        }
+      ],
       "description": "",
       "exec_inputs": [
         ""
@@ -42,32 +67,46 @@
       "local_variables": {},
       "name": "main",
       "nodes": {
+        "0d362eed-8073-4331-84a9-af4db5323a65": {
+          "data": null,
+          "location": [
+            615.0,
+            177.0
+          ],
+          "type": "github.com/chigraph/std/io:print"
+        },
+        "3b071d38-ce24-4473-a7cd-4f276a0fb849": {
+          "data": 0,
+          "location": [
+            727.0,
+            258.0
+          ],
+          "type": "lang:const-int"
+        },
         "3cfcddc3-29ef-45df-bd66-47591ae4cadd": {
           "data": {
-            "data": [],
+            "data": [
+              {
+                "": "lang:i32"
+              }
+            ],
             "exec": [
               ""
             ]
           },
           "location": [
-            671,
-            205
+            986.0,
+            179.0
           ],
           "type": "lang:exit"
         },
-        "5be41e2e-038a-4fe9-bb0e-5287c73458bf": {
-          "data": {
-            "code": "#include <stdio.h>\n\nvoid dopf() {\n\tprintf(\"Hello World!\");\n}",
-            "extraflags": [],
-            "function": "dopf",
-            "inputs": [],
-            "output": null
-          },
+        "7e48e374-1171-4757-b5c9-e356e6f55181": {
+          "data": "Hello World!",
           "location": [
-            391,
-            207
+            337.0,
+            256.0
           ],
-          "type": "c:func"
+          "type": "lang:strliteral"
         },
         "bea549a7-0768-43e9-9fc9-dafa8386721c": {
           "data": {
@@ -77,8 +116,8 @@
             ]
           },
           "location": [
-            139,
-            208
+            231.0,
+            176.0
           ],
           "type": "lang:entry"
         }
@@ -86,5 +125,6 @@
       "type": "function"
     }
   ],
+  "has_c_support": true,
   "types": {}
 }
